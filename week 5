@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    
+    int scores[5] = {85, 90, 78, 92, 88}; 
+    int sum = 0;
+
+    for(int i = 0; i < 5; i++) {
+        sum += scores[i];
+    }
+    printf("Average Score: %f\n", (float)sum / 5);
+
+    
+    int rows = 2, cols = 2;
+    int matrixA[2][2] = {{1, 2}, {3, 4}};
+    int matrixB[2][2] = {{5, 6}, {7, 8}};
+    int result[2][2];
+    printf("Adding Matrix A and Matrix B:\n");
+    for(int i = 0; i < rows; i++) {
+        for(int j = 0; j < cols; j++) {
+            result[i][j] = matrixA[i][j] + matrixB[i][j];
+            printf("%d ", result[i][j]);
+        }
+        
+    }
+
+    return 0;
+}

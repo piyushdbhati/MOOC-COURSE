@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    char grade = 'A';
+   
+    int studentID = 101;
+    float examScore = 92.5;
+    double gpa = 3.88;  
+    int mathScore = 85;
+    int scienceScore = 90;
+    int totalPoints = mathScore + scienceScore;
+    float average = totalPoints / 2.0; // Using 2.0 to ensure float result
+
+    
+    int attendancePercent = 95;
+    int passed = (average >= 50) && (attendancePercent >= 75);
+
+    printf("--- Student Report Card ---\n");
+    printf("Student ID: %d\n", studentID);
+    printf("Grade: %c\n", grade);
+    printf("Average Score: %.2f\n", average);
+    printf("GPA: %.2f\n", gpa);
+    
+    if (passed) {
+        printf("Result: Passed Course\n");
+    } else {
+        printf("Result: Needs Improvement\n");
+    }
+
+    return 0;
+}

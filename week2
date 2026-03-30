@@ -9,13 +9,13 @@ int main() {
     int mathScore = 85;
     int scienceScore = 90;
     int totalPoints = mathScore + scienceScore;
-    float average = totalPoints / 2.0; // Using 2.0 to ensure float result
+    float average = totalPoints / 2.0; 
 
     
     int attendancePercent = 95;
     int passed = (average >= 50) && (attendancePercent >= 75);
 
-    printf("--- Student Report Card ---\n");
+    
     printf("Student ID: %d\n", studentID);
     printf("Grade: %c\n", grade);
     printf("Average Score: %.2f\n", average);

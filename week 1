@@ -14,6 +14,6 @@ int main() {
   
     printf("\nThe sum of %d and %d is: %d\n", number1, number2, sum);
 
-    return 0; // Indicates the program finished successfully
+    return 0;
 }
 
